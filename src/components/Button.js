@@ -1,9 +1,9 @@
-export default function Button({ name, onClick }) {
+export default function Button({ children, onClick, bgColor, textColor }) {
   return (
     <button
       onClick={onClick}
-      style={{ backgroundColor: '#7950f2', color: '#fff' }}>
-      {name}
+      style={{ backgroundColor: bgColor, color: textColor }}>
+      {children}
     </button>
   );
 }
